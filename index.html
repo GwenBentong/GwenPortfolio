@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gwen's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bb924af76.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <!-- This is 80% vibecoded im not ashamed of that -->
+    <header>
+        <h2 class="logo">Portfolio</h2>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navHeader">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-header" id="navHeader">
+            <li><a href="#name">About Me</a></li>
+            <li><a href="#platforms">AI Automation</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#booking">Book a Call</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#name">Refresh</a></li>
+        </ul>
+    </header>
+
+    <section class="intro" id="intro">
+        <div id="binary-layer"></div>
+        <div class="cursor-glow" id="cursor-glow"></div>
+
+        <div class="profile-wrapper" id="profile-wrapper">
+            <svg class="blob-svg" viewBox="-50 -50 390 390">
+                <path class="blob-path" id="blob-path" d=""/>
+            </svg>
+            <img src="circle.png" alt="Gwen Jurick Osma" class="profile-img">
+        </div>
+
+        <h1 id="name">Gwen Jurick Osma</h1>
+        <h1 class="texts">I'm a <span id="text"></span></h1>
+    </section>
+
+
+    <section class="platforms-section" id="platforms">
+        <div class="section-glow"></div>
+        <div class="section-inner">
+            <span class="eyebrow">toolkit</span>
+            <h2 class="projects-title">Platforms I Work With</h2>
+            <p class="projects-subtitle">Click a platform to jump to what I've built with it.</p>
+
+            <div class="platform-grid">
+                <a href="#n8n-work" class="platform-badge n8n-badge">
+                    <svg viewBox="0 0 64 64" width="36" height="36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                        <circle cx="14" cy="48" r="6"/>
+                        <circle cx="50" cy="48" r="6"/>
+                        <circle cx="32" cy="16" r="6"/>
+                        <line x1="19" y1="44" x2="27" y2="21"/>
+                        <line x1="45" y1="44" x2="37" y2="21"/>
+                        <line x1="20" y1="48" x2="44" y2="48"/>
+                    </svg>
+                    <span>n8n</span>
+                </a>
+
+                <a href="#make-work" class="platform-badge make-badge">
+                    <svg viewBox="0 0 64 64" width="36" height="36" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 32a20 20 0 1 1 6 14"/>
+                        <polyline points="10 40 12 32 20 34"/>
+                    </svg>
+                    <span>Make.com</span>
+                </a>
+
+                <a href="#zapier-work" class="platform-badge zapier-badge">
+                    <svg viewBox="0 0 64 64" width="30" height="30" fill="currentColor">
+                        <polygon points="36,4 14,36 28,36 24,60 50,28 34,28"/>
+                    </svg>
+                    <span>Zapier</span>
+                </a>
+
+                <a href="#n8n-work" class="platform-badge ghl-badge">
+                    <svg viewBox="0 0 64 64" width="36" height="36" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+                        <path d="M8 46 24 20 34 34 44 14 56 46Z"/>
+                    </svg>
+                    <span>GoHighLevel</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROJECTS INTRO ════════════════════════════════ -->
+    <section class="projects-intro" id="projects">
+        <span class="eyebrow">projects</span>
+        <h2 class="projects-title">What I've Built</h2>
+        <p class="projects-subtitle">Real automations, running in production — not tutorial demos.</p>
+    </section>
+
+    <section class="project-block n8n-section" id="n8n-work">
+        <div class="section-glow"></div>
+        <div class="bg-particles">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="project-content">
+            <svg class="project-icon" viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+                <circle cx="14" cy="48" r="7"/>
+                <circle cx="50" cy="48" r="7"/>
+                <circle cx="32" cy="16" r="7"/>
+                <line x1="19" y1="44" x2="27" y2="21"/>
+                <line x1="45" y1="44" x2="37" y2="21"/>
+                <line x1="21" y1="48" x2="43" y2="48"/>
+            </svg>
+            <h3 class="project-heading">n8n</h3>
+            <p class="project-tagline">Workflow automation &amp; AI agents</p>
+
+            <div class="project-card-grid" id="n8n-projects" data-category="n8n"></div>
+        </div>
+    </section>
+
+    <section class="project-block make-section" id="make-work">
+        <div class="section-glow"></div>
+        <div class="bg-particles">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="project-content">
+            <svg class="project-icon" viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 32a20 20 0 1 1 6 14"/>
+                <polyline points="10 40 12 32 20 34"/>
+            </svg>
+            <h3 class="project-heading">Make.com</h3>
+            <p class="project-tagline">Visual, scenario-based automation</p>
+
+            <div class="project-card-grid" id="make-projects" data-category="make"></div>
+        </div>
+    </section>
+
+    <section class="project-block zapier-section" id="zapier-work">
+        <div class="section-glow"></div>
+        <div class="campfire-glow" aria-hidden="true"></div>
+        <div class="campfire-row" aria-hidden="true">
+            <div class="campfire" style="--fx:6%;  --fs:.5;  --seed:0;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-wisp w2"></div>
+                <div class="flame-ember e1"></div>
+            </div>
+            <div class="campfire" style="--fx:20%; --fs:.78; --seed:1;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-wisp w2"></div>
+                <div class="flame-ember e1"></div>
+                <div class="flame-ember e2"></div>
+            </div>
+            <div class="campfire" style="--fx:35%; --fs:.6;  --seed:2;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-ember e1"></div>
+            </div>
+            <div class="campfire" style="--fx:50%; --fs:1;   --seed:3;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-wisp w2"></div>
+                <div class="flame-ember e1"></div>
+                <div class="flame-ember e2"></div>
+            </div>
+            <div class="campfire" style="--fx:65%; --fs:.68; --seed:4;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-ember e1"></div>
+            </div>
+            <div class="campfire" style="--fx:80%; --fs:.85; --seed:5;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-wisp w2"></div>
+                <div class="flame-ember e1"></div>
+            </div>
+            <div class="campfire" style="--fx:94%; --fs:.48; --seed:6;">
+                <img src="fire.gif" alt="" class="flame-gif">
+                <div class="flame-wisp w1"></div>
+                <div class="flame-ember e1"></div>
+            </div>
+        </div>
+        <div class="project-content">
+            <svg class="project-icon" viewBox="0 0 64 64" width="48" height="48" fill="currentColor">
+                <polygon points="36,4 14,36 28,36 24,60 50,28 34,28"/>
+            </svg>
+            <h3 class="project-heading">Zapier</h3>
+            <p class="project-tagline">Simple, reliable app-to-app zaps</p>
+
+            <div class="project-card-grid" id="zapier-projects" data-category="zapier"></div>
+        </div>
+    </section>
+
+    <!-- ═══ CERTIFICATES ══════════════════════════════════ -->
+    <section class="certificates-section" id="certificates">
+        <div class="section-glow"></div>
+        <div class="cert-particles" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="cert-playground" id="certPlayground">
+            <div class="cert-playground-sticky">
+                <p class="cert-playground-tagline" aria-hidden="true">Automate the ordinary.<br>Focus on the extraordinary.</p>
+                <div class="cert-playground-path" aria-hidden="true">
+                    <span class="cert-path-line"></span>
+                    <span class="cert-path-node cert-path-node-1"></span>
+                    <span class="cert-path-node cert-path-node-2"></span>
+                    <span class="cert-path-node cert-path-node-3"></span>
+                </div>
+            </div>
+            <div class="cert-playground-columns">
+                <div class="cert-col cert-col-left" id="certColLeft"></div>
+                <div class="cert-col cert-col-right" id="certColRight"></div>
+            </div>
+            <div class="cert-playground-foreground">
+                <div class="cert-playground-title">
+                    <h2 class="projects-title cert-title">I don't just vibe code. I understand the code behind the automation.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ══════════════════════════════════ -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="section-glow"></div>
+        <div class="cursor-trail" id="testimonialTrail"></div>
+        <div class="section-inner">
+            <span class="eyebrow">feedback</span>
+            <h2 class="projects-title">What People Say</h2>
+            <p class="projects-subtitle">Worked with me or explored this site? Leave a note.</p>
+
+            <div class="testimonial-grid" id="testimonialGrid">
+                <div class="testimonial-empty" id="testimonialEmpty">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p>No comments yet — be the first to leave one!</p>
+                </div>
+            </div>
+
+            <form class="testimonial-form" id="testimonialForm">
+                <input type="text" id="testimonialName" placeholder="Your name" required maxlength="60">
+                <textarea id="testimonialMessage" placeholder="Leave a comment about the site or working with me..." required maxlength="300" rows="3"></textarea>
+                <button type="submit" id="testimonialSubmit">Post comment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ═══ BOOK A CALL ═══════════════════════════════════ -->
+    <section class="booking-section" id="booking">
+        <div class="section-glow"></div>
+        <div class="section-inner">
+            <span class="eyebrow">schedule</span>
+            <h2 class="projects-title">Book a Call</h2>
+            <p class="projects-subtitle">Pick a time that works for you — times are shown in your timezone and Philippines time.</p>
+
+            <form class="booking-form" id="bookingForm" novalidate>
+                <div class="booking-fields">
+                    <div class="field">
+                        <label for="bookName">Name</label>
+                        <input type="text" id="bookName" name="name" required maxlength="80" autocomplete="name">
+                    </div>
+                    <div class="field">
+                        <label for="bookEmail">Email</label>
+                        <input type="email" id="bookEmail" name="email" required maxlength="120" autocomplete="email">
+                    </div>
+                    <div class="field">
+                        <label for="bookCompany">Company</label>
+                        <input type="text" id="bookCompany" name="company" maxlength="100" autocomplete="organization">
+                    </div>
+                    <div class="field">
+                        <label for="bookPosition">Position</label>
+                        <input type="text" id="bookPosition" name="position" maxlength="100">
+                    </div>
+                    <div class="field">
+                        <label for="bookTimezone">Timezone</label>
+                        <select id="bookTimezone" name="timezone" required></select>
+                    </div>
+                    <div class="field">
+                        <label for="bookIndustry">Industry</label>
+                        <input type="text" id="bookIndustry" name="industry" maxlength="100">
+                    </div>
+                </div>
+
+                <div class="field field-full">
+                    <label for="bookMessage">What can I help you with?</label>
+                    <textarea id="bookMessage" name="message" rows="3" maxlength="500" required></textarea>
+                </div>
+
+                <div class="booking-datetime">
+                    <div class="field">
+                        <label for="bookDate">Date</label>
+                        <input type="date" id="bookDate" name="date" required>
+                    </div>
+                    <div class="field field-full">
+                        <label>Available times <span class="booking-duration-note" id="bookingDurationNote"></span></label>
+                        <div class="booking-slots" id="bookingSlots">
+                            <p class="booking-slots-hint" id="bookingSlotsHint">Pick a date to see available times.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-time-preview" id="bookingTimePreview" hidden>
+                    <div><span class="preview-label">Your time</span><span class="preview-value" id="previewLocalTime">—</span></div>
+                    <div><span class="preview-label">Philippines time</span><span class="preview-value" id="previewPhTime">—</span></div>
+                    <div><span class="preview-label">Timezone</span><span class="preview-value" id="previewTimezone">—</span></div>
+                </div>
+
+                <p class="booking-error" id="bookingError" role="alert" hidden></p>
+
+                <button type="submit" class="booking-submit" id="bookingSubmit">Confirm Booking</button>
+              
+            </form>
+
+            <div class="booking-success" id="bookingSuccess" aria-live="polite" hidden>
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>You're Booked!</h3>
+                <div class="booking-success-grid" id="bookingSuccessGrid"></div>
+                <button type="button" class="booking-again" id="bookingAgain">Book another call</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══════════════════════════════════════ -->
+    <section class="contact-section" id="contact">
+        <div class="section-glow"></div>
+        <div class="section-inner">
+            <span class="eyebrow">let's talk</span>
+            <h2 class="projects-title">Get In Touch</h2>
+            <p class="projects-subtitle">Have a project in mind, or just want to say hi? Reach out below.</p>
+
+            <div class="contact-icons">
+                <a href="mailto:your-email@gmail.com" class="contact-icon" aria-label="Email me" title="Email me">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://facebook.com/your-profile" class="contact-icon" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://linkedin.com/in/your-profile" class="contact-icon" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://cal.com/your-username" class="contact-icon" aria-label="Book a meeting" title="Book a meeting" target="_blank" rel="noopener">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <h3>&copy; <span id="year"></span> Gwen Jurick Osma. All rights reserved.</h3>
+    </div>
+
+    <!-- ═══ PROJECT DETAIL MODAL ═══════════════════════════ -->
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="project-modal-backdrop" id="projectModalBackdrop"></div>
+        <div class="project-modal-card" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle" tabindex="-1">
+            <div class="terminal-titlebar">
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-dot"></span>
+                <span class="terminal-path" id="projectModalPath">~/project</span>
+                <button type="button" class="project-modal-close" id="projectModalClose" aria-label="Close project details">✕</button>
+            </div>
+            <div class="project-modal-body" id="projectModalBody"></div>
+        </div>
+    </div>
+
+    <!-- ═══ WORKFLOW IMAGE LIGHTBOX ════════════════════════ -->
+    <div class="workflow-lightbox" id="workflowLightbox" aria-hidden="true">
+        <button type="button" class="workflow-lightbox-close" id="workflowLightboxClose" aria-label="Close image">✕</button>
+        <img src="" alt="" id="workflowLightboxImg">
+        <p class="workflow-lightbox-caption" id="workflowLightboxCaption"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
